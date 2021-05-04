@@ -16,7 +16,7 @@
             <nav class="nav">
                 <a class="link logo" href="./index.html"><span class="logo-first">Web</span><span class="logo-second">Studio</span></a>
                 <ul class="list menu">
-                    <li class="menu-item"><a href="./index.html" class="link header-link-active">Студия</a></li>
+                    <li class="menu-item menu-item-active"><a href="./index.html" class="link header-link-active">Студия</a></li>
                     <li class="menu-item"><a href="./portfolio.html" class="link header-link">Портфолио</a></li>
                     <li class="menu-item"><a href="Контакты" class="link header-link">Контакты</a></li>
                 </ul>
@@ -42,7 +42,7 @@
         <section class="title-bg">
             <div class="container">
                 <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-                <div class="btn"><button type="button" class="title-btn">Заказать услугу</button></div>
+                <div class="btn"><button type="button" class="title-btn" data-modal-open>Заказать услугу</button></div>
             </div>         
         </section>
 <!--Особенности-->        
@@ -365,5 +365,15 @@
             </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" data-modal-close>x</button>
+            <p class="modal-title">Title</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque blanditiis quasi amet, facilis nihil ratione dicta. Ad expedita nesciunt excepturi cupiditate deserunt ea itaque nam. Rerum nostrum sunt itaque.
+            </p>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
